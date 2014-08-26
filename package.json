@@ -4,7 +4,8 @@
   "description": "A home for my experiments with data visualization",
   "main": "server.js",
   "dependencies": {
-    "express": "~4.8.5"
+    "express": "~4.8.5",
+    "ejs": "~1.0.0"
   },
   "devDependencies": {},
   "scripts": {
