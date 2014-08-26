@@ -1,0 +1,23 @@
+{
+  "name": "avocado",
+  "version": "0.0.0",
+  "description": "A home for my experiments with data visualization",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~4.8.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/khwang/avocado.git"
+  },
+  "author": "Kevin Hwang",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/khwang/avocado/issues"
+  }
+}
