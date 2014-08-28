@@ -27,5 +27,23 @@ data = {}
 
 node_list = []
 
+# Nodes are a list with the names of friends
 for node in nodes:
   d = {}
+  d["name"] = str(node[1])
+  node_list.append(d)
+data["nodes"] = node_list
+
+# Links are a list with the source and target
+
+link_list = []
+
+for link in links:
+  d = {}
+  d["source"] = link[0]
+  d["target"] = link[1]
+  link_list.append(d)
+data["links"] = link_list 
+
+with open("facebook_data.json", "w") as f:
+  f.write(json.dumps(data))
