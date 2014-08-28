@@ -22,6 +22,9 @@
       }
     </style>
 
+  </head>
+
+  <body>
     <script>
       var width = 1100;
       var height = 800;
@@ -29,7 +32,10 @@
 
       var force = d3.layout.force().gravity(.05).distance(150).charge(-100).size([width, height]);
 
+      console.log("Loading data");
       d3.json("static/facebook_data.json", function(error, json) {
+        console.log(error);
+        console.log(json);
         force.nodes(json.nodes).links(json.links).start();
 
         var link = svg.selectAll(".link").data(json.links).enter().append("line").attr("class", "link");
@@ -49,8 +55,5 @@
         });
       });
     </script>
-  </head>
-
-  <body>
   </body>
 </html>
