@@ -3,7 +3,7 @@ var express = require("express");
 var app = express();
 
 // Configuration
-app.use("/static", express.static(__dirname + "/public"));
+app.use("/static", express.static(__dirname + "/static"));
 
 app.engine("ejs", require("ejs").renderFile);
 app.set("view engine", "ejs");
